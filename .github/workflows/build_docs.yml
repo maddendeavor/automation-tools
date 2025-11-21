@@ -14,7 +14,7 @@ jobs:
       - run: echo "Branch name ${{ github.ref }}; repository ${{ github.repository }}."
 
       - name: Check out repository code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           submodules: true
           token: ${{ secrets.GITFLOW_PAT }}
